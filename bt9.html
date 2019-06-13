@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    for (let i=0; i<4; i++) {
+        let x = parseInt(prompt('Nhập vào mảng a: '));
+        a.push(x);
+    }
+    document.write('Mảng a la: '+ a+'<br>');
+    for (let j=0; j<4; j++) {
+        let y = parseInt(prompt('Nhập vào mảng b: '));
+        b.push(y);
+    }
+    document.write('Mảng a la: '+ a+'<br>');
+    let c = a.concat(b);
+    document.write('Mảng c là: ' + c);
+</script>
+</body>
+</html>

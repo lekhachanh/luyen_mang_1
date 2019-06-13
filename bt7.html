@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 6; i++) {
+        let x = parseInt(prompt('nhập 10 phần tử vào mảng số nguyên'));
+        arr.push(x);
+    }
+    document.write('Mảng nhập vào là: ' + arr + '<br>');
+    let V = parseInt(prompt('nhập vào số nguyên V:'));
+    let index = -1;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === V) {
+            index = i;
+            break;
+        }
+    }
+        if (index !== -1) {
+            arr.splice(index,1);
+            document.write('mảng sau khi xóa phẩn tử V là ' + arr + '<br>');
+         } else {
+            document.write('Số V không có trong mảng' + '<br>');
+         }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    for (let i=0; i<10; i++) {
+        let x = parseInt(prompt('nhập vào mảng với 10 phần tử'));
+        arr.push(x);
+    }
+    document.write('Mảng nhập vào là: '+arr +'<br>');
+    arr.sort();
+    arr.sort(function(a, b){
+        return b - a;
+    });
+    document.write('Mảng đảo ngược là: '+arr+'<br>');
+</script>
+</body>
+</html>

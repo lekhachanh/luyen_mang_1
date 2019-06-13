@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="mang(parseInt(prompt('nhập vào độ dài của mảng muốn tạo')))">
+<script>
+    function mang(x) {
+        let arr=[];
+        for (let i=0; i<x; i++) {
+          let y = parseInt(prompt('nhập vào phần tử thú '+ i +' của mảng arr'));
+            arr.push(y);
+        }
+        document.write(arr.reverse());
+    }
+</script>
+</body>
+</html>

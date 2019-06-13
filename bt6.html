@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    for (let i=0; i<10; i++) {
+        let x = parseInt(prompt('nhập 10 phần tử vào mảng số nguyên'))
+        arr.push(x);
+    }
+    let V= parseInt(prompt('nhập vào số nguyên V:'))
+    for (let j=0; j<arr.length; j++) {
+        if(arr[j]===V) {
+            document.write('V is in the array');
+            break;
+        }else {
+            document.write('V is not in the array');
+            break;
+        }
+    }
+</script>
+</body>
+</html>
